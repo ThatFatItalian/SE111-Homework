@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'starwars';
+    src: url(../fonts/star_jedi/starjedi/Starjedi.ttf)
+}
+
+#text {
+    display: flex;
+    font-family: 'starwars', sans-serif;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    
+}
+
+body {
+    background-color: black;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    
+}
+
+#nav img {
+    width: 475px;
+    height: auto;
+    border: rgb(209, 175, 64) solid 5px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    
+}
+
+#nav img:hover {
+    transform: scale(1.05);
+}
