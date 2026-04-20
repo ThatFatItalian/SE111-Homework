@@ -1,17 +1,56 @@
+@font-face {
+    font-family: 'starwars';
+    src: url(../fonts/star_jedi/starjedi/Starjedi.ttf)
+}
+
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    background-color: black;
 }
 
-
-.intro {
-    position: absolute;
-    bottom: -100px;
-    width: 100%;
+.text {
+    font-family: 'starwars', sans-serif;
+    font-size: 50px;
+    color: #FFE81F;
     text-align: center;
-    font-size: 24px;
-
-    animation: move_up 6s linear forwards;
+    
 }
+#header { 
+    display: flex; 
+    font-family: 'starwars', sans-serif; 
+    font-size: 75px; 
+    color: #FFE81F; 
+    justify-content: center; 
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center; 
+       
+    
+}
+
+#nav p {
+    width: 475px;
+    height: auto;
+    border: #D1AF40 solid 5px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    margin-top: 200px;  
+    
+    
+}
+
+#nav p:hover {
+    transform: scale(1.05);
+}
+
 
 @keyframes move_up {
     0% {
@@ -23,4 +62,59 @@ body {
         transform: translateY(-120vh);
         opacity: 0;
     }
+}
+
+
+.intro {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+
+    animation: move_up 6s linear forwards;
+}
+
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade_in {
+    opacity: 0;
+    animation: fade_in 8s ease-in forwards;
+}
+
+.divider {
+    display: flex;
+    background-color: #D1AF40;
+    width: 100%;
+    border-radius: 10px;
+    color: #FFE81F;
+    justify-content: center;
+}
+
+.img_container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 475px;
+    height: auto;
+    border: rgb(209, 175, 64) solid 5px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+.border {
+    gap: 50px;
+    border: #D1AF40 solid 5px;
+    border-radius: 5px;
+    justify-content: center;
 }
