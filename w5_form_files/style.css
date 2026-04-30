@@ -1,0 +1,10 @@
+
+table, tr, td{
+  border:1px solid black;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
