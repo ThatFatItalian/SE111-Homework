@@ -29,14 +29,14 @@ a {
     text-decoration: none;
 }
 
-#nav {
+.nav {
     display: flex;
     justify-content: center;
     gap: 50px;
     text-align: center;
 }
 
-#nav p {
+.nav p {
     width: 475px;
     height: auto;
     border: #D1AF40 solid 5px;
@@ -47,7 +47,7 @@ a {
     
 }
 
-#nav p:hover {
+.nav p:hover {
     transform: scale(1.05);
 }
 

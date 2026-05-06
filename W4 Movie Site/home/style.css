@@ -3,7 +3,7 @@
     src: url(../fonts/star_jedi/starjedi/Starjedi.ttf)
 }
 
-#text {
+.text {
     display: flex;
     font-family: 'starwars', sans-serif;
     font-size: 50px;
@@ -17,7 +17,7 @@ body {
     background-image: url(../images/stars.png);
 }
 
-#nav {
+.nav {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -25,7 +25,7 @@ body {
     
 }
 
-#nav img {
+.nav img {
     width: 475px;
     height: auto;
     border: rgb(209, 175, 64) solid 5px;
@@ -34,6 +34,7 @@ body {
     
 }
 
-#nav img:hover {
+.nav img:hover {
     transform: scale(1.05);
 }
+
