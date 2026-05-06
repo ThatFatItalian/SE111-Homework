@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 in-class Lab</title>
+</head>
+<body>
+    
+
+    <script>
+        function add(numOne, numTwo){
+            var sum = numOne + numTwo
+            return sum
+        }
+
+        function subtract(numOne, numTwo){
+            var sum = numOne - numTwo
+            return sum
+        }
+
+        function multiply(numOne, numTwo){
+            var sum = numOne * numTwo
+            return sum
+        }
+
+        function divide(numOne, numTwo){
+            var sum = numOne / numTwo
+            return sum
+        }
+        var choice = String(prompt("Would you like to +, -, *, or /: (Please use the symbols) "))
+
+        var a = Number(prompt("Please give me a number"))
+
+        var b = Number(prompt("Please give me another number"))
+
+        if(choice === "+"){
+            alert(add(a,b))
+        }
+        else if(choice === "-"){
+            alert(subtract(a,b))
+        }
+        else if(choice === "*"){
+            alert(multiply(a,b))
+        }
+        else if(choice === "/"){
+            alert(divide(a,b))
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
