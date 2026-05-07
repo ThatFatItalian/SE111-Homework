@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        var hPay = Number(prompt("How much hourly pay do you make: "))
+
+        var hWeek = Number(prompt("How much do you work per week: "))
+
+        var tax = .20
+
+        var weekPay = hPay * hWeek
+
+        var grossPay = weekPay * 2
+
+        var taxPay = grossPay * tax
+
+        var netPay =  grossPay - taxPay
+
+        let grossString = "Gross Pay: $" + grossPay
+        let taxString = "Uncle Sams Share: $" + taxPay
+        let netString = "Net Pay: $" + netPay
+
+        alert(grossString + "\n" + taxString + "\n" + netString)
+
+        console.log(grossString)
+        console.log(taxString)
+        console.log(netString)
+    </script>
+</body>
+</html>
